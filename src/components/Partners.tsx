@@ -28,7 +28,7 @@ export function TrustedSupporters() {
     <Section id="trusted-supporters"  className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-primary to-secondary bg-clip-text ">
-          Trusted & Supported By
+          Trusted & Supported by
         </h2>
         <div className="flex flex-wrap justify-center items-center gap-8">
           {supporters.map((supporter) => (
