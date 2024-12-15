@@ -1,12 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Benefits } from "@/components/Benefits";
+import { Contact } from "@/components/Contact";
+import { Features } from "@/components/Features";
+import { Hero } from "@/components/Hero";
+import { Logo } from "@/components/Logo";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="relative min-h-screen bg-background">
+      <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
+        <div className="container flex h-16 items-center justify-between px-4 md:px-6">
+          <Logo />
+        </div>
+      </header>
+      <main className="pt-16">
+        <Hero />
+        <Features />
+        <Benefits />
+        <Contact />
+      </main>
+      <WhatsAppButton />
     </div>
   );
 };
