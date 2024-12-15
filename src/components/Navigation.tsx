@@ -29,9 +29,23 @@ export function Navigation() {
   const navigationItems = [
     { title: "What is Kibenki?", href: "#what-is-kibenki" },
     { title: "How it Works", href: "#how-it-works" },
-    { title: "For Employers", href: "#for-employers" },
     { title: "Contact", href: "#contact" },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (element) {
+      const offset = 80; // Height of the fixed header plus some padding
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   const MobileMenu = () => (
     <Sheet>
@@ -46,6 +60,7 @@ export function Navigation() {
             <a
               key={item.title}
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               className="text-lg font-medium transition-colors hover:text-primary"
             >
               {item.title}
@@ -66,6 +81,7 @@ export function Navigation() {
           <NavigationMenuItem key={item.title}>
             <NavigationMenuLink
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
             >
               {item.title}

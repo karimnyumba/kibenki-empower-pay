@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 export function Contact() {
   return (
-    <Section className="bg-accent">
+    <Section id="contact" className="bg-accent">
       <div className="grid gap-12">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

@@ -3,7 +3,7 @@ import { Shield, Clock, TrendingUp, Wallet } from "lucide-react";
 
 export function Benefits() {
   return (
-    <Section>
+    <Section id="what-is-kibenki">
       <div className="grid gap-12">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
