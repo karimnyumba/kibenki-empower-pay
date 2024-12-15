@@ -32,7 +32,7 @@ export function Hero() {
           </div>
           <div className="mt-8 animate-fade-in-up [animation-delay:600ms]">
             <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-              What is Kibenki?
+              What is Kibenki
             </h2>
             <p className="mx-auto mt-4 max-w-[700px] text-lg text-muted-foreground">
               Kibenki is a revolutionary platform that allows employees to get immediate access to their earned wages, whenever they need it. No more waiting until the end of the month — your salary is now available on your schedule.

@@ -3,11 +3,11 @@ import { Shield, Clock, TrendingUp, Wallet } from "lucide-react";
 
 export function Benefits() {
   return (
-    <Section id="what-is-kibenki">
+    <Section id="why-choose-kibenki">
       <div className="grid gap-12">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Why Choose Kibenki?
+            Why Choose Kibenki
           </h2>
           <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground">
             Experience the future of salary payments
