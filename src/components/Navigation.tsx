@@ -27,7 +27,7 @@ export function Navigation() {
   }, []);
 
   const navigationItems = [
-    { title: "What is Kibenki", href: "#" },
+    { title: "What is Kibenki", href: "#about" },
     { title: "How it Works", href: "#how-it-works" },
     { title: "Why Kibenki", href: "#why-choose-kibenki" },
     { title: "Our trusted supporters", href: "#trusted-supporters" },

@@ -73,7 +73,7 @@ export function Hero() {
           </div>
 
           {/* About Section */}
-          <div className="mt-16 max-w-4xl mx-auto p-8 rounded-2xl bg-gradient-to-b from-background to-background/50 shadow-lg border border-gray-200/20">
+          <section id="about" className="mt-16 max-w-4xl mx-auto p-8 rounded-2xl bg-gradient-to-b from-background to-background/50 shadow-lg border border-gray-200/20">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-6">
               What is{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -86,7 +86,7 @@ export function Hero() {
               more waiting until the end of the month — your salary is now
               available on your schedule.
             </p>
-          </div>
+          </section>
         </div>
       </div>
 
