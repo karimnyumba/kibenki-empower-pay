@@ -4,43 +4,39 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden bg-background pt-16 md:pt-24 lg:pt-32">
       <div className="container relative z-10 mx-auto px-4 md:px-6">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <div className="flex flex-col items-center gap-4 text-center lg:items-start lg:text-left">
-            <h1 className="animate-fade-in-up text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Every Day is{" "}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Pay Day!
-              </span>
-            </h1>
-            <p className="mx-auto max-w-[700px] animate-fade-in-up text-lg text-muted-foreground md:text-xl [animation-delay:200ms] lg:mx-0">
-              Access your earned salary, today. Get paid today, with early access to
-              your earned salary — directly to your mobile money account.
-            </p>
-            <div className="animate-fade-in-up [animation-delay:400ms]">
-              <Button
-                asChild
-                size="lg"
-                className="rounded-full bg-primary text-white hover:bg-primary/90"
+        <div className="flex flex-col items-center gap-4 text-center">
+          <h1 className="animate-fade-in-up text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+            Every Day is{" "}
+            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Pay Day!
+            </span>
+          </h1>
+          <p className="mx-auto max-w-[700px] animate-fade-in-up text-lg text-muted-foreground md:text-xl [animation-delay:200ms]">
+            Access your earned salary, today. Get paid today, with early access to
+            your earned salary — directly to your mobile money account.
+          </p>
+          <div className="animate-fade-in-up [animation-delay:400ms]">
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-primary text-white hover:bg-primary/90"
+            >
+              <a
+                href="https://wa.me/255785261625"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <a
-                  href="https://wa.me/255785261625"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Apply Now
-                </a>
-              </Button>
-            </div>
+                Apply Now
+              </a>
+            </Button>
           </div>
-          <div className="relative mx-auto max-w-[600px] animate-fade-in lg:max-w-none">
-            <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-              alt="Professional using Kibenki"
-              className="rounded-lg shadow-xl"
-              width={600}
-              height={400}
-              style={{ objectFit: 'cover' }}
-            />
+          <div className="mt-8 animate-fade-in-up [animation-delay:600ms]">
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
+              What is Kibenki?
+            </h2>
+            <p className="mx-auto mt-4 max-w-[700px] text-lg text-muted-foreground">
+              Kibenki is a revolutionary platform that allows employees to get immediate access to their earned wages, whenever they need it. No more waiting until the end of the month — your salary is now available on your schedule.
+            </p>
           </div>
         </div>
       </div>
