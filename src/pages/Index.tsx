@@ -3,6 +3,7 @@ import { Contact } from "@/components/Contact";
 import { Features } from "@/components/Features";
 import { Hero } from "@/components/Hero";
 import { Navigation } from "@/components/Navigation";
+import { TrustedSupporters } from "@/components/Partners";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
         <Hero />
         <Features />
         <Benefits />
+        <TrustedSupporters />
         <Contact />
       </main>
       <WhatsAppButton />

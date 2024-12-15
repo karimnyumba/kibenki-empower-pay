@@ -30,6 +30,7 @@ export function Navigation() {
     { title: "What is Kibenki", href: "#" },
     { title: "How it Works", href: "#how-it-works" },
     { title: "Why Kibenki", href: "#why-choose-kibenki" },
+    { title: "Our trusted supporters", href: "#trusted-supporters" },
     { title: "Contact", href: "#contact" },
   ];
 
@@ -96,7 +97,7 @@ export function Navigation() {
   return (
     <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between px-4">
-        <Logo />
+      <div className="flex items-center justify-center "> <div><Logo /></div> <div className="mt-2 font-bold">Kibenki</div></div>
         <div className="flex items-center gap-4">
           <DesktopMenu />
           <Button asChild className="hidden md:inline-flex">
