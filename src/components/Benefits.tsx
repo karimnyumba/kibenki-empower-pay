@@ -7,10 +7,10 @@ export function Benefits() {
       <div className="grid gap-12">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            Why Choose Kibenki?
+            What is Kibenki?
           </h2>
-          <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground">
-            Experience the future of salary payments
+          <p className="mx-auto mt-4 max-w-[700px] text-lg text-muted-foreground">
+            Kibenki is a revolutionary platform that allows employees to get immediate access to their earned wages, whenever they need it. No more waiting until the end of the month — your salary is now available on your schedule.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
